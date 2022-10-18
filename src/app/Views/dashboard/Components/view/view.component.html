@@ -1,0 +1,6 @@
+<h4>List of Data</h4>
+<div *ngFor="let inputData of info$ | async let i = index">
+    <span>{{i+1}}.</span> 
+    {{inputData.data}}
+</div>
+
