@@ -19,7 +19,9 @@ import * as fromInfo from './Views/dashboard/Store/reducer/reducer.reducer';
     FormsModule,
     ReactiveFormsModule,
     StoreModule.forRoot({}, {}),
-    StoreModule.forFeature(fromInfo.infoFeatureKey, fromInfo.reducer),
+    StoreModule.forFeature(
+      fromInfo.infoFeatureKey, 
+      fromInfo.reducer),
   ],
   providers: [],
   bootstrap: [AppComponent]
